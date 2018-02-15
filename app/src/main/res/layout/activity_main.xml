@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akashdubey.threaddemo1.MainActivity">
+
+
+    <EditText
+        android:id="@+id/inputET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveBtn"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="inpute here "
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/deleteBtn"
+        android:text="save" />
+
+    <TextView
+        android:id="@+id/outputTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputET"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="31dp"
+        android:text="File content will be read here " />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/outputTV"
+        android:text="Delete file" />
+</RelativeLayout>
